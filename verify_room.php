@@ -14,6 +14,9 @@ if ($result->num_rows > 0) {
     header("Location: dashboard.php");
     exit();
 } else {
-    echo "Invalid room code.";
+    echo "<script>
+        alert('Invalid room code');
+        window.location.href = 'index.html';
+    </script>";
 }
 ?>

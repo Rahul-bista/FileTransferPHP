@@ -28,8 +28,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body class="bg-[#1D274B] text-white">
-    <form class="mt-20 flex items-center justify-center w-full h-full" action="" method="POST">
-        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Create
+    <form class="mt-12 flex items-center justify-center w-full h-full" action="" method="POST">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded">Create
             Room</button>
     </form>
     <div class="flex flex-col items-center justify-center mt-12 space-y-8">
@@ -105,7 +105,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
                     const roomCode = "<?php echo $roomCode ?>";
-                    console.log(roomCode);
                     const qrCodeContainer = document.getElementById("qrcode");
                     QRCode.toCanvas(qrCodeContainer, roomCode, function (error) {
                         if (error) console.error(error);
