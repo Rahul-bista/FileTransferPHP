@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <!-- Room Code -->
             <div class="w-full max-w-sm">
                 <div class="mb-2 flex justify-between items-center">
-                    <label for="room-code" class="text-sm font-medium text-gray-900 dark:text-white">Room Code:</label>
+                    <label for="room-code" class="text-sm font-medium text-white">Room Code:</label>
                 </div>
                 <div class="flex items-center">
                     <span
@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <!-- Owner Token -->
             <div class="w-full max-w-sm">
                 <div class="mb-2 flex justify-between items-center">
-                    <label for="owner-token" class="text-sm font-medium text-gray-900 dark:text-white">Owner Token:</label>
+                    <label for="owner-token" class="text-sm font-medium text-white">Owner Token:</label>
                 </div>
                 <div class="flex items-center">
                     <span
